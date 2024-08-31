@@ -1,0 +1,105 @@
+<html>
+
+<head>
+	<!-- CSS -->
+	<link rel="stylesheet" href="index.css">
+	<!-- Font Awesome CDN -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<h1>MBENGE</h1>
+	</header>
+	<main>
+		<div class="tweet-input-area">
+			<img src="images/logo.png" class="profile-pic">
+			<textarea placeholder="Poster une annonce..." id="tweet-input"></textarea>
+		</div>
+		<button id="tweet-btn">Poster</button>
+		<div class="feed" id="feed">
+			<!-- Tweets here!! -->
+		</div>
+		<div class="modal" id="modal">
+			<div class="close-modal-btn-container">
+				<button class="modal-close-btn" id="modal-close-btn" >X</button>
+			</div>
+			<div class="modal-inner" id="modal-inner">
+				<h2>Terms et Conditions</h2>
+				<p class="modal-text" id="modal-text">
+					<div class="terms">
+						En utilisant ce service, vous acceptez que l'accès aux informations personnelles, 
+						telles que le numéro de téléphone de l'individu ayant posté une annonce ou un message, 
+						est soumis à un frais de 1 euro. Ce paiement doit être effectué en utilisant les méthodes 
+						de paiement approuvées par notre plateforme, incluant, mais sans s'y limiter, les cartes 
+						de crédit, les cartes de débit, et les services de paiement en ligne.
+						Une fois le paiement reçu et confirmé, les informations demandées seront 
+						fournies directement à l'adresse électronique ou par tout autre moyen de 
+						communication spécifié lors de l'achat. Il est de la responsabilité de l'utilisateur 
+						de s'assurer que les informations de contact fournies sont correctes et à jour.
+						Aucun remboursement ne sera accordé après la transmission des informations, 
+						sauf dans les cas où il est déterminé que les informations fournies sont 
+						incorrectes en raison d'une erreur de notre part. Toute demande 
+						de remboursement doit être soumise dans les 7 jours suivant 
+						la réception des informations, accompagnée d'une preuve que 
+						les informations étaient inexactes.
+						L'utilisateur est responsable de la vérification de l'exactitude 
+						des informations obtenues avant de procéder à leur utilisation. 
+						Nous déclinons toute responsabilité en cas de mauvaise utilisation 
+						des informations fournies ou si les informations sont utilisées à 
+						des fins illégales ou non éthiques. En outre, nous nous réservons 
+						le droit de refuser l'accès aux informations personnelles à tout 
+						utilisateur soupçonné de violer ces termes et conditions ou toute 
+						autre politique de notre plateforme.
+						En acceptant ces termes, vous consentez à respecter toutes 
+						les lois et réglementations applicables en matière de protection 
+						des données et de confidentialité. Vous acceptez également de ne 
+						pas partager ou divulguer les informations obtenues à des tiers 
+						sans le consentement explicite de la personne concernée.
+						Nous nous réservons le droit de modifier ces termes et conditions 
+						à tout moment sans préavis. Il est de la responsabilité de 
+						l'utilisateur de consulter régulièrement les termes et 
+						conditions pour se tenir informé des mises à jour. 
+						Votre utilisation continue de ce service après 
+						de telles modifications constitue votre acceptation des nouveaux termes et conditions.
+						En utilisant ce service et en effectuant un paiement, 
+						vous reconnaissez avoir lu, compris et accepté ces termes 
+						et conditions ainsi que notre politique de confidentialité applicable.
+					</div>
+				</p>
+					
+		
+            <div class="checkbox-container">
+                <div>
+                    <label for="accept-terms">
+                       J'accepte les termes et conditions
+                    </label>
+                    <input class="checkbox" type="checkbox" id="accept-terms">
+                </div>
+			</div>
+       
+		
+				<form id="consent-form">
+					<input type="email" name="email" placeholder="Entrer votre email" required/>
+					<label for="paiement">Methode de paiement:</label>
+                <select id="paiement">
+                    <option value="paypal">paypal</option>
+                    <option value="carte de credit">Carte de credit</option>
+                    <option value="virement">Virement instantanné</option>
+                </select>
+					<div class="modal-choice-btns" id="modal-choice-btns">
+						<button type="submit" class="modal-btn">payer 1.5 EURO</button>
+					</div>
+				</form>
+			</div>
+		</div>
+
+	</main>
+	<script src="index.js" type="module"></script>
+</body>
+
+</html>
